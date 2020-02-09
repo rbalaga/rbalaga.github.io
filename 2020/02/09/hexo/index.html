@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Rammohan">
+    <title>Creating a Markdown Blog - Rammohan</title>
+    <meta name="author" content="RAMMOHANA RAO BALAGA">
+    
+    
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"RAMMOHANA RAO BALAGA","sameAs":[]},"articleBody":"Creating a Markdown Blog using Hexo.Hello, I thought of creating a self designed blog with minimal work. I had did some research on creating a personalized blogs for Tech related posts and which are self hosted. I went to blogger.com and few other providers. But they were hosted on their own cloud. It is most for recommended for non tech people.\nI just went though some tech posts and found Hexo! is matching to my requirement where i can write my posts on local computer and host our files and get control over the content.\nLet’s go through the steps I did for creating this blog.\nQuick StartPre-Requirements\n NPM to be installed and configured properly. (which comes with installing NodeJs)\n Rich text editor. (VS Code / Sublime / Atom)\n Git (optional)\n\nif you require any help on installing above things, just go through youtube videos and get it done.\n1. Installing Hexoopen commanline cmd and install hexo-cli package as global.\n1$ npm install -g hexo-cli\n\n2. Create Hexo Project1$ hexo init &#123;ProjectName&#125;\n\nwhich will create a basic project structure and adds a hello-world.md page inside source\\_pages folder. now our blog is ready to serve.\n3. Start Project1$ hexo server\n\n4. Some of the useful commands to follow.1$ hexo new filename\n\n1$ hexo new filename --creates a new blog post\n\n1$ hexo new draft filename --creates a draft post and not publishes it.\n\n1$ hexo new page filename --creates a individual blog page.\n\n5. installing a Customized Theme.Go through the themes list and go its Github repo and go through the Readme.md for installing the theme.\n6.Generate static files1$ hexo generate\n\nMore info: Generating\nDeploy to remote sites1$ hexo deploy\n\nMore info: Deployment\n","dateCreated":"2020-02-09T10:06:49+05:30","dateModified":"2020-02-09T12:47:55+05:30","datePublished":"2020-02-09T10:06:49+05:30","description":"","headline":"Creating a Markdown Blog","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rraobalaga.com/2020/02/09/hexo/"},"publisher":{"@type":"Organization","name":"RAMMOHANA RAO BALAGA","sameAs":[]},"url":"http://rraobalaga.com/2020/02/09/hexo/"}</script>
+    <meta name="description" content="Creating a Markdown Blog using Hexo.Hello, I thought of creating a self designed blog with minimal work. I had did some research on creating a personalized blogs for Tech related posts and which are s">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Creating a Markdown Blog">
+<meta property="og:url" content="http://rraobalaga.com/2020/02/09/hexo/index.html">
+<meta property="og:site_name" content="Rammohan">
+<meta property="og:description" content="Creating a Markdown Blog using Hexo.Hello, I thought of creating a self designed blog with minimal work. I had did some research on creating a personalized blogs for Tech related posts and which are s">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-09T04:36:49.735Z">
+<meta property="article:modified_time" content="2020-02-09T07:17:55.199Z">
+<meta property="article:author" content="RAMMOHANA RAO BALAGA">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+    
+    
+    
+    
+    
+    <!--STYLES-->
+    
+<link rel="stylesheet" href="/assets/css/style-q9sdy4weunmvckxabadf1s5rixfhnz73zikzpr5p5ezbeoejjg3y8ud5ftgu.min.css">
+
+    <!--STYLES END-->
+    
+
+    
+
+    
+        
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a
+            class="header-title-link"
+            href="/%20"
+            aria-label=""
+        >
+            Rammohan
+        </a>
+    </div>
+    
+        
+            <a
+                class="header-right-picture "
+                href="#about"
+                aria-label="Open the link: /#about"
+            >
+        
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/"
+                            
+                            title="Home"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-categories"
+                            
+                            title="Categories"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                            title="Tags"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                            title="Archives"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link open-algolia-search"
+                             href="#search"
+                            
+                            title="Search"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                            title="About"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Creating a Markdown Blog
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2020-02-09T10:06:49+05:30">
+	
+		    Feb 09, 2020
+    	
+    </time>
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <h3 id="Creating-a-Markdown-Blog-using-Hexo"><a href="#Creating-a-Markdown-Blog-using-Hexo" class="headerlink" title="Creating a Markdown Blog using Hexo."></a>Creating a Markdown Blog using Hexo.</h3><p>Hello, I thought of creating a self designed blog with minimal work. I had did some research on creating a personalized blogs for Tech related posts and which are self hosted. I went to blogger.com and few other providers. But they were hosted on their own cloud. It is most for recommended for non tech people.</p>
+<p>I just went though some tech posts and found <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! is matching to my requirement where i can write my posts on local computer and host our files and get control over the content.</p>
+<p>Let’s go through the steps I did for creating this blog.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Pre-Requirements"><a href="#Pre-Requirements" class="headerlink" title="Pre-Requirements"></a>Pre-Requirements</h3><ul>
+<li><input disabled="" type="checkbox"> <code>NPM</code> to be installed and configured properly. (which comes with installing NodeJs)</li>
+<li><input disabled="" type="checkbox"> Rich text editor. (<code>VS Code</code> / <code>Sublime</code> / <code>Atom</code>)</li>
+<li><input disabled="" type="checkbox"> Git (optional)</li>
+</ul>
+<p>if you require any help on installing above things, just go through youtube videos and get it done.</p>
+<h4 id="1-Installing-Hexo"><a href="#1-Installing-Hexo" class="headerlink" title="1. Installing Hexo"></a>1. Installing Hexo</h4><p>open commanline <code>cmd</code> and install <code>hexo-cli</code> package as global.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-Create-Hexo-Project"><a href="#2-Create-Hexo-Project" class="headerlink" title="2. Create Hexo Project"></a>2. Create Hexo Project</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &#123;ProjectName&#125;</span><br></pre></td></tr></table></figure>
+
+<p>which will create a basic project structure and adds a hello-world.md page inside <code>source\_pages</code> folder. now our blog is ready to serve.</p>
+<h4 id="3-Start-Project"><a href="#3-Start-Project" class="headerlink" title="3. Start Project"></a>3. Start Project</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-Some-of-the-useful-commands-to-follow"><a href="#4-Some-of-the-useful-commands-to-follow" class="headerlink" title="4. Some of the useful commands to follow."></a>4. Some of the useful commands to follow.</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new filename</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new filename --creates a new blog post</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft filename --creates a draft post and not publishes it.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page filename --creates a individual blog page.</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-installing-a-Customized-Theme"><a href="#5-installing-a-Customized-Theme" class="headerlink" title="5. installing a Customized Theme."></a>5. installing a Customized Theme.</h4><p>Go through the themes list and go its Github repo and go through the Readme.md for installing the theme.</p>
+<h4 id="6-Generate-static-files"><a href="#6-Generate-static-files" class="headerlink" title="6.Generate static files"></a>6.Generate static files</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+            
+
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/02/09/webpack/"
+                    data-tooltip="webpack"
+                    aria-label="PREVIOUS: webpack"
+                >
+                    
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://plus.google.com/share?url=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Google+"
+                    aria-label="Share on Google+"
+                >
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2020 RAMMOHANA RAO BALAGA. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/02/09/webpack/"
+                    data-tooltip="webpack"
+                    aria-label="PREVIOUS: webpack"
+                >
+                    
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://plus.google.com/share?url=http://rraobalaga.com/2020/02/09/hexo/"
+                    title="Share on Google+"
+                    aria-label="Share on Google+"
+                >
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://rraobalaga.com/2020/02/09/hexo/"
+                        aria-label="Share on Facebook"
+                    >
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://twitter.com/intent/tweet?text=http://rraobalaga.com/2020/02/09/hexo/"
+                        aria-label="Share on Twitter"
+                    >
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://plus.google.com/share?url=http://rraobalaga.com/2020/02/09/hexo/"
+                        aria-label="Share on Google+"
+                    >
+                        <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+        
+
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <h4 id="about-card-name">RAMMOHANA RAO BALAGA</h4>
+        
+            <div id="about-card-bio"><p>author.bio</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
+
+            </div>
+        
+        
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+
+<script src="/assets/js/script-pe8bm3axuypdyx7eldfzmoqrkfbdbamgv6sxznjlwmqrpc6sqvjdorta2eg7.min.js"></script>
+
+<!--SCRIPTS END-->
+
+
+    
+
+
+
+
+    </body>
+</html>
